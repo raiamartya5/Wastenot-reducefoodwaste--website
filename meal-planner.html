@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner - WasteNot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meal Planner</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#ingredients">Add Ingredients</a></li>
+                <li><a href="#suggestions">Meal Suggestions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ingredients">
+            <h2>Add Your Ingredients</h2>
+            <form id="ingredient-form">
+                <label for="ingredient">Ingredient:</label>
+                <input type="text" id="ingredient" name="ingredient" required>
+                
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="date" id="expiry-date" name="expiry-date" required>
+                
+                <button type="submit">Add Ingredient</button>
+            </form>
+            <ul id="ingredient-list"></ul>
+        </section>
+
+        <section id="suggestions">
+            <h2>Meal Suggestions</h2>
+            <button id="get-suggestions">Get Meal Suggestions</button>
+            <ul id="suggestion-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WasteNot. All rights reserved.</p>
+    </footer>
+    <script src="meal-planner.js"></script>
+</body>
+</html>

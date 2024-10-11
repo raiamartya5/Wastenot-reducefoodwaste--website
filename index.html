@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteNot - Reduce Food Waste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WasteNot</h1>
+        <nav>
+            <ul>
+                <li><a href="#donation-hub">Food Donation Hub</a></li>
+                <li><a href="meal-planner.html">Meal Planning Tool</a></li>
+                <li><a href="https://ngobox.org/full-news_10-NGOs-Providing-Free-Meals-For-the-Underprivileged-in-India-NGOBOX_24752">Community Marketplace</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S030691921830318X">Educational Resources</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Together, We Can Reduce Food Waste</h2>
+            <p>Join our community in the fight against food waste and promote sustainability.</p>
+            <a href="#donation-hub" class="cta-button">Get Involved</a>
+        </section>
+
+        <section id="donation-hub">
+            <h2>Food Donation Hub</h2>
+            <img src="donation.jpg" alt="Food Donation" class="img1">
+            <p>Connect restaurants and grocery stores with local shelters to donate surplus food.</p>
+            <button onclick="location.href='donate.html'">Learn More</button>
+        </section>
+
+        <section id="meal-planner">
+            <h2>Meal Planning Tool</h2>
+            <img src="meal-planner.jpg" alt="Meal Planning" class="img2">
+            <p>Plan meals based on ingredients you already have to minimize waste and collects its expiry date if its near either you use it or donate it .</p>
+            <button onclick="location.href='meal-planner.html'">Try It Now</button>
+        </section>
+
+        <section id="marketplace">
+            <h2>Community Marketplace</h2>
+            <img src="marketplace.jpg" alt="Community Marketplace" class="img3">
+            <p>these are some NGO list for the food security in future we would like to link them directly to the site and help in prevention of foodwastage.</p>
+            <button onclick="location.href='https://ngobox.org/full-news_10-NGOs-Providing-Free-Meals-For-the-Underprivileged-in-India-NGOBOX_24752'">Explore Marketplace</button>
+        </section>
+
+        <section id="resources">
+            <h2>Educational Resources</h2>
+            <img src="resources.jpg" alt="Educational Resources" class="img4">
+            <p>Access tips, articles, and recipes to reduce food waste.</p>
+            <button onclick="location.href='https://www.sciencedirect.com/science/article/pii/S030691921830318X'">Read More</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Get in touch!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WasteNot. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
